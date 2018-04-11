@@ -1,0 +1,36 @@
+.center {
+    text-align: center;
+    color: #000;
+}
+
+h1,h2 {
+    color: #222;
+    text-align: center;
+    margin-bottom: 5px;
+}
+  
+
+p.success {
+    color: #28a745;
+    text-align: center;
+}
+
+p.failure {
+    color: #dc3545;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+.error-list li {
+    color: #ff0000;
+}  
+
+.new-post-form .full-width-input {
+    display: block;
+    min-height: 3em;
+    margin: 10px 0;
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "cs-546-lab-10",
+  "version": "1.0.0",
+  "description": "package for lab10",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Firstname:\"Jiayi\" Lastname:\"Liu\" CWID:\"10421248\"",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0"
+  }
+}
