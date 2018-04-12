@@ -18,7 +18,7 @@ router.get(`/`, (req, res) => {
     }
 });
 
-router.post(`/login`, async(req, res) => {
+router.post(`/login`, (req, res) => {
     let provideUsername = req.body.username;
     let providePassword = req.body.password;
     console.log(`${provideUsername}`);
@@ -29,7 +29,7 @@ router.post(`/login`, async(req, res) => {
         if (!providePassword) {
             throw `No valid password provided`;
         }
-        const id = await users.check(provideName, providePassword);
+        const id = users.check(provideUsername, providePassword);
         if (id === `password not match`) {
             throw `password not match`
         }
@@ -40,6 +40,7 @@ router.post(`/login`, async(req, res) => {
         res.cookie(`AuthCookie`, id);
         res.redirect(`/private`);
     } catch (e) {
+        console.log(e);
         res.status(403).json(e);
         return;
     }
